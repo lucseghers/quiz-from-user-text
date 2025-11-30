@@ -164,7 +164,7 @@ else:
 
 st.markdown(
     """
-1. **Haal de Vragen op:** Gebruik een tool (zoals ChatGPT of Gemini) om een YouTube-video te analyseren en daar meerkeuzevragen uit te genereren. Pas het aantal vragen naar wens aan.
+1. **Haal de Vragen op:** Gebruik een tool (zoals ChatGPT of Gemini) om een YouTube-video te analyseren en daar meerkeuzevragen uit te genereren. Pas het aantal vragen naar wens aan. Hieronder staat een werkende voorbeeldprompt.
 """
 )
 
