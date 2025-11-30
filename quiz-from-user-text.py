@@ -164,7 +164,7 @@ else:
 
 st.markdown(
     """
-1. **Haal de Vragen op:** Gebruik een tool (zoals ChatGPT of Gemini) om een YouTube-video te analyseren en daar meerkeuzevragen uit te genereren. Pas het aantal vragen naar wens aan. Hieronder staat een werkende voorbeeldprompt.
+1. **Haal de Vragen op:** Gebruik een tool (zoals ChatGPT of Gemini) om een YouTube-video te analyseren en daar meerkeuzevragen uit te genereren. Pas het aantal vragen aan. Hieronder staat een werkende voorbeeldprompt.
 """
 )
 
@@ -182,7 +182,7 @@ st.code(voorbeeld_prompt, language='markdown')
 
 st.markdown(
     """
-2. **Plak de Vragen:** Plak de gecreëerde vragen (in willekeurig formaat) in het tekstveld hieronder.
+2. **Plak de vragen:** Plak de gecreëerde vragen (in willekeurig formaat) in het tekstveld hieronder.
 3. **Genereer & Download:** De app converteert de tekst automatisch naar het juiste H5P-formaat.
 """
 )
