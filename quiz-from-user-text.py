@@ -165,15 +165,27 @@ else:
 st.markdown(
     """
 1. **Haal de Vragen op:** Gebruik een tool (zoals ChatGPT of Gemini) om een YouTube-video te analyseren en daar meerkeuzevragen uit te genereren.
-Hieronder een voorbeeldprompt
+"""
+)
 
-Kan je onderstaade video even sammenvatten en daar dan 5MC vragen over weergeven. in de taal van de video. Geef als uitvoer enkel de MC vragen in de taal van de video. Geef vragen in doorlopende tekst. duid het jusite antwoord aan. Video: https://www.youtube.com/watch?
+# AANGEPASTE WEERGAVE VAN DE PROMPT
+voorbeeld_prompt = """
+Kan je onderstaande video even samenvatten en daar dan 5 MC vragen over weergeven.
+Geef enkel de MC vragen als output.
+Gebruik de taal van de video.
+Geef het juiste antwoord duidelijk aan.
+Video: [PLAK HIER DE YOUTUBE URL]
+"""
 
+# st.code zorgt voor een gekaderd blok met kopieerknop
+st.code(voorbeeld_prompt, language='markdown') 
+
+st.markdown(
+    """
 2. **Plak de Vragen:** Plak de gecreëerde vragen (in willekeurig formaat) in het tekstveld hieronder.
 3. **Genereer & Download:** De app converteert de tekst automatisch naar het juiste H5P-formaat.
 """
 )
-
 # API-key: Gebruik st.secrets, met fallback naar invoerveld
 try:
     api_key = st.secrets["OPENAI_API_KEY"]
