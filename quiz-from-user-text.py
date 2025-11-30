@@ -152,7 +152,7 @@ def create_h5p_from_template(template_h5p_path, output_h5p_path, mc_questions):
 # ---------- Streamlit UI (AANGEPAST) ----------
 st.set_page_config(page_title="Tekst → H5P-quiz", page_icon="📝")
 
-st.title("📝 Tekst → 📚 H5P meerkeuzequiz (Robuuste Modus)")
+st.title("📝 Tekst → 📚 H5P meerkeuzequiz")
 
 # Optioneel: logo bovenaan tonen
 logo_path = "logo.png"
@@ -164,13 +164,13 @@ else:
 
 st.markdown(
     """
-1. **Haal de Vragen op:** Gebruik een tool (zoals ChatGPT of Gemini) om een YouTube-video te analyseren en daar meerkeuzevragen uit te genereren.
+1. **Haal de Vragen op:** Gebruik een tool (zoals ChatGPT of Gemini) om een YouTube-video te analyseren en daar meerkeuzevragen uit te genereren. Pas het aantal vragen naar wens aan.
 """
 )
 
 # AANGEPASTE WEERGAVE VAN DE PROMPT
 voorbeeld_prompt = """
-Kan je onderstaande video even samenvatten en daar dan 5 MC vragen over weergeven.
+Kan je onderstaande video even samenvatten en daar dan 3 MC vragen over weergeven.
 Geef enkel de MC vragen als output.
 Gebruik de taal van de video.
 Geef het juiste antwoord duidelijk aan.
